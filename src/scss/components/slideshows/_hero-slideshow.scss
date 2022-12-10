@@ -1,0 +1,153 @@
+.hero-slideshow__container {
+    position: relative;
+    max-width: 1170px;
+}
+
+.hero-slideshow__text {
+    position: absolute;
+    margin-left: 5%;
+    z-index: 1;
+    color: $white;
+
+    @include media('above-small') {
+        top: 50%;
+    }
+
+    @include media('below-small') {
+        top: 40%;
+    }
+
+    @include media('below-tablet') {
+        top: 30%;
+    }
+}
+
+.hero-slideshow__heading {
+    font-weight: $weight-700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+
+    @include media('above-small') {
+        font-size: 2.5em;
+    }
+
+    @include media('below-small') {
+        font-size: 2em;
+    }
+
+    @include media('below-mobile') {
+        font-size: 1.2em;
+    }
+}
+
+.hero-slideshow__heading-bg {
+    background: $hover-light-color;
+    font-family: $base-font;
+    font-weight: $weight-300;
+
+    @include media('above-tablet') {
+        padding: 10px 20px;
+    }
+
+    @include media('below-tablet') {
+        padding: 5px;
+    }
+}
+
+.hero-slideshow__subheadings {
+    margin-top: 50px;
+}
+
+.hero-slideshow__subheading {
+    font-family: $heading-font;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    @include media('above-small') {
+        font-size: 1.875em;
+    }
+
+    @include media('below-small') {
+        font-size: 1.5em;
+    }
+
+    @include media('below-mobile') {
+        font-size: 1.3em;
+    }
+}
+
+.hero-slideshow__slides {
+    @extend %full-width;
+
+    position: relative;
+    display: block;
+    height: auto;
+    padding-top: 52%;
+    overflow: hidden;
+
+    @include media('above-mobile') {
+        padding-top: 52%;
+    }
+
+    @include media('below-mobile') {
+        padding-top: 85%;
+    }
+}
+
+.hero-slideshow__slide {
+    @extend %background-cover;
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    animation: autoplay 24s linear infinite 0s;
+}
+
+.hero-slideshow__slide-1 {
+    opacity: 1;
+}
+
+.hero-slideshow__slide-2 {
+    animation-delay: 6s;
+}
+
+.hero-slideshow__slide-3 {
+    animation-delay: 12s;
+}
+
+.hero-slideshow__slide-4 {
+    animation-delay: 18s;
+}
+
+@keyframes autoplay {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+        transform: scale(1.1) rotate(2.5deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}

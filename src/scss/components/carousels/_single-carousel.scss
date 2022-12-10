@@ -1,0 +1,24 @@
+.single-carousel {
+    @extend %full-width;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.single-carousel__item {
+    @extend %background-cover;
+
+    display: inline-block;
+
+    @include media('below-small') {
+        padding: 0 150px;
+    }
+
+    @include media('below-tablet') {
+        padding: 0 100px;
+    }
+
+    @include media('below-mobile') {
+        padding: 0;
+    }
+}
