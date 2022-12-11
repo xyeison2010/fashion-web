@@ -1,6 +1,7 @@
 # Fashion Web- The online destination for men's style
 
-MadeGentle is a website that focus on the latest men's fashion and style. It's simple, modern and fully responsive, I also learned a bunch of amazing techniques to create superb eye-catching animations.
+Fashiones un sitio web que se enfoca en la última moda y estilo masculino. 
+Es simple, moderno y totalmente receptivo. También aprendí un montón de técnicas increíbles para crear animaciones magníficas y llamativas.
 
 [**View Demo**](https://pamcy.github.io/50Websites/38-madegentle-website/)
 
