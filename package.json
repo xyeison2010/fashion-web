@@ -8,9 +8,7 @@
     "watch": "webpack --watch",
     "dev": "webpack-dev-server"
   },
-  "engines": {
-    "node": "14.17.5"
-  },
+
   "author": "I am",
   "license": "ISC",
   "dependencies": {
